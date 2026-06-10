@@ -1029,7 +1029,7 @@ static void _GGDKDraw_DispatchEvent(GdkEvent *event, gpointer data) {
                 xdiff = abs(((int)evt->x) - gdisp->bs.release_x);
                 ydiff = abs(((int)evt->y) - gdisp->bs.release_y);
 
-                if (xdiff + ydiff < gdisp->bs.double_wiggle &&
+                if (xdiff + ydiff <= gdisp->bs.double_wiggle &&
                         gw == gdisp->bs.release_w &&
                         gevent.u.mouse.button == gdisp->bs.release_button &&
                         (int32_t)(gevent.u.mouse.time - gdisp->bs.last_press_time) < gdisp->bs.double_time &&

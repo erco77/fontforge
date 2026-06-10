@@ -2297,7 +2297,7 @@ static void GResEditDlg(GResInfo *all,const char *def_res_file,void (*change_res
 
 Color _GDraw_res_fg = COLOR_CREATE(0x00,0x00,0x00), _GDraw_res_bg = COLOR_CREATE(0xf5,0xff,0xfa);
 Color _GDraw_res_warnfg = COLOR_CREATE(0xBD,0x43,0x37);
-int _GDraw_res_res = 0, _GDraw_res_multiclicktime = 200, _GDraw_res_multiclickwiggle = 3;
+int _GDraw_res_res = 0, _GDraw_res_multiclicktime = 300, _GDraw_res_multiclickwiggle = 3;
 int _GDraw_res_selnottime = 2, _GDraw_res_twobuttonfixup = true, _GDraw_res_synchronize = false;
 #if __Mac
 int _GDraw_res_macosxcmd = true;
