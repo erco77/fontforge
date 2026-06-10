@@ -540,7 +540,7 @@ static void DrawTangentPoint( GWindow pixmap, int x, int y,
 	}
     }
 
-    float sizedelta = 4;
+    float sizedelta = 6;    // horizontal/vertical arrow size
     if( prefs_cvEditHandleSize > prefs_cvEditHandleSize_default )
 	sizedelta *= prefs_cvEditHandleSize / prefs_cvEditHandleSize_default;
 
@@ -554,7 +554,7 @@ static void DrawTangentPoint( GWindow pixmap, int x, int y,
 	gp[2].x = x+sizedelta; gp[2].y = y;
     } else {
 	/* at a 45 angle, a value of 4 looks too small. I probably want 4*1.414 */
-	sizedelta = 5;
+	sizedelta = 8;     // diagonal arrow size
 	if( prefs_cvEditHandleSize > prefs_cvEditHandleSize_default )
 	    sizedelta *= prefs_cvEditHandleSize / prefs_cvEditHandleSize_default;
 	int xdiff = unit->x > 0 ?   sizedelta  : -1*sizedelta;
